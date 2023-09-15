@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>MLlab</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static', filename='img/favicon.png') }}" rel="icon">
+  <link href="{{ url_for('static', filename='img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/animate.css/animate.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Medilab
+  * Updated: May 30 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">contact@example.com</a>
+        <i class="bi bi-phone"></i> +1 999 99999 98
+      </div>
+      <div class="d-none d-lg-flex social-links align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html">MLlab</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Advices</a></li>
+          <li><a class="nav-link scrollto" href="#departments">Liver</a></li>
+
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span>
+        Prediction</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container">
+      <h1>Welcome to MLlab</h1>
+      <h2>We are team of talented designers making ML models</h2>
+      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="content">
+              <h3>Why Choose MLlab?</h3>
+              <p>
+                At MLlab, we believe in the power of Machine Learning (ML) and its potential to transform industries,
+                drive innovation,
+                and solve complex problems. Our mission is to harness the capabilities of ML and provide a platform
+                where individuals
+                and businesses can explore, learn, and leverage this cutting-edge technology.
+              </p>
+              <div class="text-center">
+                <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-receipt"></i>
+                    <h4>Information</h4>
+                    <p>We take information to predict dont worry your info is safe with us.</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-cube-alt"></i>
+                    <h4>analyze</h4>
+                    <p>Our ml model will analyze precdict about your disease.</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-images"></i>
+                    <h4>Display</h4>
+                    <p>We will display your results</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
+            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a>
+          </div>
+
+          <div
+            class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+            <h3>Feel free to visit our center in person for one-on-one consultations.</p>
+
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-fingerprint"></i></div>
+                <h4 class="title"><a href="">Expertise</a></h4>
+                <p class="description">MLlab is home to a team of experienced data scientists, researchers, and ML
+                  enthusiasts who are passionate about the
+                  field. We bring together a wealth of knowledge and expertise to deliver high-quality ML solutions and
+                  services.</p>
+              </div>
+
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-gift"></i></div>
+                <h4 class="title"><a href="">Innovation</a></h4>
+                <p class="description">We thrive on pushing the boundaries of what ML can achieve. MLlab serves as a hub
+                  for innovation, where novel
+                  algorithms, models, and techniques are developed and applied to real-world challenges. We continuously
+                  explore new
+                  horizons and stay at the forefront of ML advancements.</p>
+              </div>
+
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-atom"></i></div>
+                <h4 class="title"><a href="">Collaboration</a></h4>
+                <p class="description">MLlab fosters a collaborative environment, encouraging knowledge sharing and
+                  community engagement. We believe that ML is
+                  a collective effort, and by collaborating with experts and enthusiasts, we can unlock new
+                  possibilities
+                  and drive
+                  meaningful progress.</p>
+              </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="fas fa-user-md"></i>
+              <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>Doctors</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="far fa-hospital"></i>
+              <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>Departments</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="fas fa-flask"></i>
+              <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>Research Labs</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="fas fa-award"></i>
+              <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>Awards</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Advices</h2>
+          <p>One of the liver's primary functions is detoxifying harmful substances from the body. It filters toxins,
+            pollutants, and
+            drugs, preventing them from circulating in the bloodstream. The liver breaks down and eliminates waste
+            products,
+            including bilirubin, ammonia, and metabolic byproducts.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-heartbeat"></i></div>
+              <h4><a href="">Heart rate and Liver</a></h4>
+              <p>The liver receives a substantial blood supply from the heart through the hepatic artery and the portal
+                vein. The liver's
+                role in processing nutrients, detoxification, and metabolism depends on the blood flow it receives from
+                the heart.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-pills"></i></div>
+              <h4><a href="">Hepatotoxicity</a></h4>
+              <p>Some medications can cause liver damage or hepatotoxicity. This can occur due to various reasons,
+                including direct
+                toxicity of the drug or its metabolites, immune-mediated reactions, or idiosyncratic reactions. It's
+                important to be
+                aware of the potential hepatotoxic effects of medications.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-hospital-user"></i></div>
+              <h4><a href="">Consult with Referring Physicians</a></h4>
+              <p>If your primary care physician or referring specialist recommends a specific hospital or healthcare
+                facility, it is
+                worth discussing their reasons and seeking their insights. They may have insights into the hospital's
+                expertise in liver
+                disease management or access to specialized resources.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-dna"></i></div>
+              <h4><a href="">Genetic Counseling</a></h4>
+              <p>If you have concerns about inherited liver diseases or genetic predispositions, consider seeking
+                genetic counseling. A
+                genetic counselor can assess your family history, discuss potential risks, and provide guidance
+                regarding genetic
+                testing options and their implications.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-wheelchair"></i></div>
+              <h4><a href="">Nutrient Metabolism</a></h4>
+              <p>After digestion, nutrients from the food are absorbed into the bloodstream and transported to the
+                liver. The liver is
+                responsible for metabolizing and storing nutrients such as carbohydrates, proteins, and fats. It helps
+                regulate blood
+                sugar levels and converts excess glucose into glycogen for storage.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-notes-medical"></i></div>
+              <h4><a href="">Do Not Delay Medical Assistance</a></h4>
+              <p>Liver-related emergencies can be life-threatening, and prompt medical evaluation and treatment are
+                crucial. Avoid any
+                delays in seeking professional help.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Appointment Section ======= -->
+    <section id="appointment" class="appointment section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Make an Prediction</h2>
+          <p>Liver cirrhosis is a serious medical condition characterized by the progressive and irreversible scarring
+            of the liver.
+            Early detection and prediction of liver cirrhosis can greatly aid in timely intervention and treatment.
+            Machine learning
+            (ML) techniques can be employed to predict the likelihood of liver cirrhosis based on various factors and
+            patient data.</p>
+        </div>
+
+        <form action="/process" method="post">
+          <label for="duration">Duration of alcohol consumption (years):</label>
+          <input type="number" id="duration" name="duration" required><br><br>
+
+          <label for="diabetes">Diabetes Result:</label>
+          <select id="diabetes" name="diabetes" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select><br><br>
+
+          <label for="obesity">Obesity:</label>
+          <select id="obesity" name="obesity" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select><br><br>
+
+          <label for="pcv">PCV (%):</label>
+          <input type="number" id="pcv" name="pcv" required><br><br>
+
+          <label for="count">Total Count:</label>
+          <input type="number" id="count" name="count" required><br><br>
+
+          <label for="bilirubin">Total Bilirubin (mg/dl):</label>
+          <input type="number" step="0.01" id="bilirubin" name="bilirubin" required><br><br>
+
+          <label for="direct">Direct (mg/dl):</label>
+          <input type="number" step="0.01" id="direct" name="direct" required><br><br>
+
+          <label for="phosphatase">AL.Phosphatase (U/L):</label>
+          <input type="number" id="phosphatase" name="phosphatase" required><br><br>
+
+          <label for="sgot">SGOT/AST (U/L):</label>
+          <input type="number" id="sgot" name="sgot" required><br><br>
+
+          <label for="sgpt">SGPT/ALT (U/L):</label>
+          <input type="number" id="sgpt" name="sgpt" required><br><br>
+
+          <label for="usg">USG Abdomen (diffuse liver or not):</label>
+          <select id="usg" name="usg" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select><br><br>
+
+          <label for="highbp">Highest Blood Pressure:</label>
+          <input type="number" id="highbp" name="highbp" required><br><br>
+
+          <input type="submit" value="Submit">
+        </form>
+
+      </div>
+    </section><!-- End Appointment Section -->
+
+    <!-- ======= Departments Section ======= -->
+    <section id="departments" class="departments">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Liver Parts</h2>
+          <p>The liver plays a central role in metabolism. It is responsible for processing and storing nutrients, such
+            as
+            carbohydrates, proteins, and fats. It converts excess glucose into glycogen for storage and releases it when
+            the body
+            needs energy. The liver also metabolizes drugs, toxins, and other substances, making them more manageable
+            for the body
+            to eliminate.</p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Right Lobe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Left Lobe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Caudate Lobe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Quadrate Lobe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Porta Hepatis</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Right Lobe</h3>
+                    <p class="fst-italic">The right lobe is the largest part of the liver and is responsible for the
+                      majority of its functions. It aids in the
+                      production of bile, which is important for the digestion and absorption of fats. The right lobe
+                      also helps in
+                      detoxification, storage of vitamins and minerals, and metabolism of drugs and toxins.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{{ url_for('static', filename='img/departments-1.jpg') }}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Left Lobe</h3>
+                    <p class="fst-italic">The left lobe is the smaller portion of the liver and is located on the left
+                      side of the body. It works in conjunction
+                      with the right lobe to perform the liver's functions. It assists in the filtration and processing
+                      of blood, regulation
+                      of blood sugar levels, and synthesis of proteins.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{{ url_for('static', filename='img/departments-2.jpg') }}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Caudate Lobe</h3>
+                    <p class="fst-italic">The caudate lobe is a smaller part of the liver located near the inferior
+                      vena cava. It plays a role in the filtration
+                      and detoxification processes of the liver. The caudate lobe is also involved in the storage and
+                      release of glucose,
+                      maintaining a stable blood sugar level.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{{ url_for('static', filename='img/departments-3.jpg') }}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Quadrate Lobe</h3>
+                    <p class="fst-italic">The quadrate lobe is a small section of the liver located near the
+                      gallbladder. It helps in the production and secretion
+                      of bile, which aids in the digestion of fats. The quadrate lobe also plays a role in the storage
+                      and metabolism of
+                      nutrients.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{{ url_for('static', filename='img/departments-4.jpg') }}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-5">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Porta Hepatis</h3>
+                    <p class="fst-italic">The porta hepatis is not a distinct part of the liver but rather a region
+                      where the main blood vessels, bile ducts, and
+                      nerves enter and exit the liver. It serves as a gateway for the liver's communication with the
+                      rest of the digestive
+                      system and other organs.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{{ url_for('static', filename='img/departments-5.jpg') }}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Departments Section -->
+
+    <!-- ======= Doctors Section ======= -->
+    <!-- End Doctors Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>Some causes of liver cirrhosis, such as excessive alcohol consumption and certain viral hepatitis
+            infections, can be
+            prevented. Adopting a healthy lifestyle, getting vaccinated against hepatitis viruses, practicing safe sex,
+            and avoiding
+            exposure to toxins can reduce the risk of developing liver cirrhosis.</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
+                data-bs-target="#faq-list-1">What is liver cirrhosis?<i class="bx bx-chevron-down icon-show"></i><i
+                  class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Liver cirrhosis is a chronic liver disease characterized by the progressive scarring and damage of
+                  liver tissue, leading
+                  to impaired liver function.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2"
+                class="collapsed">What causes liver cirrhosis?<i class="bx bx-chevron-down icon-show"></i><i
+                  class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Liver cirrhosis can be caused by various factors, including chronic alcohol abuse, viral hepatitis
+                  (such as hepatitis B
+                  or C), non-alcoholic fatty liver disease (NAFLD), autoimmune diseases, genetic disorders, and certain
+                  medications or
+                  toxins.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3"
+                class="collapsed">What are the symptoms of liver cirrhosis?<i
+                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  The symptoms of liver cirrhosis can vary, but common signs include fatigue, weakness, jaundice
+                  (yellowing of the skin
+                  and eyes), abdominal pain or swelling, easy bruising or bleeding, itching, and changes in appetite and
+                  weight.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4"
+                class="collapsed">How is liver cirrhosis diagnosed? <i class="bx bx-chevron-down icon-show"></i><i
+                  class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Liver cirrhosis is diagnosed through a combination of medical history evaluation, physical
+                  examination, blood tests to
+                  assess liver function and detect specific markers, imaging tests (such as ultrasound, CT scan, or
+                  MRI), and sometimes a
+                  liver biopsy.
+
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5"
+                class="collapsed">Can liver cirrhosis be reversed? <i class="bx bx-chevron-down icon-show"></i><i
+                  class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  The scarring and damage caused by liver cirrhosis are usually irreversible. However, early detection
+                  and appropriate
+                  management can help slow down the progression of the disease and prevent further complications.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{{ url_for('static', filename='img/testimonials/testimonials-1.jpg') }}"
+                    class="testimonial-img" alt="">
+                  <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    "Your liver cirrhosis prediction model is incredibly accurate and reliable. It has shown impressive
+                    performance in
+                    correctly identifying the presence or absence of liver cirrhosis based on the input parameters."
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{{ url_for('static', filename='img/testimonials/testimonials-2.jpg') }}"
+                    class="testimonial-img" alt="">
+                  <h3>Sara Wilsson</h3>
+                  <h4>Designer</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    "I am amazed by the precision of your liver cirrhosis prediction model. It has the potential to
+                    revolutionize early
+                    detection and intervention for this serious liver disease."
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{{ url_for('static', filename='img/testimonials/testimonials-3.jpg') }}"
+                    class="testimonial-img" alt="">
+                  <h3>Jena Karlis</h3>
+                  <h4>Store Owner</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    "Your machine learning model for liver cirrhosis prediction is a remarkable achievement. It
+                    demonstrates the power of
+                    data-driven approaches in healthcare and can greatly assist healthcare professionals in making
+                    informed decisions."
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{{ url_for('static', filename='img/testimonials/testimonials-4.jpg') }}"
+                    class="testimonial-img" alt="">
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    "The accuracy and efficiency of your liver cirrhosis prediction model are truly commendable. It has
+                    the potential to
+                    enhance clinical decision-making and improve patient outcomes by enabling early intervention."
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{{ url_for('static', filename='img/testimonials/testimonials-5.jpg') }}"
+                    class="testimonial-img" alt="">
+                  <h3>John Larson</h3>
+                  <h4>Entrepreneur</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    "Congratulations on developing a highly effective liver cirrhosis prediction model. Its ability to
+                    analyze multiple
+                    variables and provide reliable predictions can contribute significantly to the field of liver
+                    disease research and
+                    patient care."
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Gallery</h2>
+          <p>A liver gallery typically refers to a collection of images or visual representations related to the liver.
+            It may
+            include anatomical diagrams, illustrations, histopathology slides, medical imaging scans (such as
+            ultrasound, CT scans,
+            or MRI), and other visual materials showcasing the liver's structure, function, and associated conditions.
+          </p>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{{ url_for('static', filename='img/gallery/gallery-1.jpg') }}" class="galelry-lightbox">
+                <img src="{{ url_for('static', filename='img/gallery/gallery-1.jpg') }}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{{ url_for('static', filename='img/gallery/gallery-2.jpg') }}" class="galelry-lightbox">
+                <img src="{{ url_for('static', filename='img/gallery/gallery-2.jpg') }}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{{ url_for('static', filename='img/gallery/gallery-3.jpg') }}" class="galelry-lightbox">
+                <img src="{{ url_for('static', filename='img/gallery/gallery-3.jpg') }}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{{ url_for('static', filename='img/gallery/gallery-4.jpg') }}" class="galelry-lightbox">
+                <img src="{{ url_for('static', filename='img/gallery/gallery-4.jpg') }}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{{ url_for('static', filename='img/gallery/gallery-5.jpg') }}" class="galelry-lightbox">
+                <img src="{{ url_for('static', filename='img/gallery/gallery-5.jpg') }}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{{ url_for('static', filename='img/gallery/gallery-6.jpg') }}" class="galelry-lightbox">
+                <img src="{{ url_for('static', filename='img/gallery/gallery-6.jpg') }}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{{ url_for('static', filename='img/gallery/gallery-7.jpg') }}" class="galelry-lightbox">
+                <img src="{{ url_for('static', filename='img/gallery/gallery-7.jpg') }}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{{ url_for('static', filename='img/gallery/gallery-8.jpg') }}" class="galelry-lightbox">
+                <img src="{{ url_for('static', filename='img/gallery/gallery-8.jpg') }}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Our knowledgeable staff is available during regular business hours to answer your inquiries and provide
+            information
+            about liver diseases, treatment options, and lifestyle management. Whether you're seeking general advice,
+            looking for
+            resources, or need a listening ear, we're committed to assisting you every step of the way.</p>
+        </div>
+      </div>
+
+      <div>
+        <iframe style="border:0; width: 100%; height: 350px;"
+          src="https://www.google.co.in/maps/place/SmartInternz/@17.435593,78.360556,16z/data=!3m1!5s0x3bcb939324b66be1:0x756088fd8ae0aa6c!4m6!3m5!1s0x3bcb9952f64281a5:0xc9e43f2bdb6e9672!8m2!3d17.4357854!4d78.3599781!16s%2Fg%2F11c5_t1sx6?entry=ttu"
+          frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="container">
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>6th floor, Sundarayya Vignana Kendram, Technical Block, Madhava Reddy Colony, Gachibowli, Hyderabad,
+                  Telangana 500032</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+1 999 99999 98</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>MLlab</h3>
+            <p>
+              6th floor, Sundarayya Vignana Kendram, Technical Block, Madhava Reddy Colony, Gachibowli, Hyderabad,
+              Telangana 500032<br><br>
+              <strong>Phone:</strong> +1 999 99999 98<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Advices</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>It will be very Helpfull people.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>MLlab</span></strong>. All Rights Reserved
+        </div>
+
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{{ url_for('static', filename='vendor/purecounter/purecounter_vanilla.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/php-email-form/validate.js') }}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+
+</html>
